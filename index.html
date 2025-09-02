@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Poppins', sans-serif; 
+        body {
+            font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
         }
-        
+
         /* Header Styles */
         .header {
             position: fixed;
@@ -26,18 +26,18 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
-        
+
         .header.scrolled {
             background: rgba(255, 255, 255, 0.98);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         /* Parallax Effects */
         .parallax {
             transform: translateZ(0);
             will-change: transform;
         }
-        
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -49,7 +49,7 @@
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeInLeft {
             from {
                 opacity: 0;
@@ -60,7 +60,7 @@
                 transform: translateX(0);
             }
         }
-        
+
         @keyframes fadeInRight {
             from {
                 opacity: 0;
@@ -71,55 +71,55 @@
                 transform: translateX(0);
             }
         }
-        
+
         .animate-fade-up {
             animation: fadeInUp 0.8s ease-out;
         }
-        
+
         .animate-fade-left {
             animation: fadeInLeft 0.8s ease-out;
         }
-        
+
         .animate-fade-right {
             animation: fadeInRight 0.8s ease-out;
         }
-        
+
         .animate-delay-200 {
             animation-delay: 0.2s;
             animation-fill-mode: both;
         }
-        
+
         .animate-delay-400 {
             animation-delay: 0.4s;
             animation-fill-mode: both;
         }
-        
+
         /* Mobile Menu */
         .mobile-menu {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-        
+
         .mobile-menu.open {
             transform: translateX(0);
         }
-        
+
         /* Hover Effects */
         .hover-scale {
             transition: transform 0.3s ease;
         }
-        
+
         .hover-scale:hover {
             transform: scale(1.05);
         }
-        
+
         /* Scroll Reveal */
         .scroll-reveal {
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.8s ease;
         }
-        
+
         .scroll-reveal.revealed {
             opacity: 1;
             transform: translateY(0);
@@ -134,7 +134,7 @@
                 <div class="flex items-center">
                     <img src="logo.svg" alt="Boakostura" class="h-8 md:h-10 w-auto">
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-green-600 transition-colors">Início</a>
@@ -144,7 +144,7 @@
                         Inscrever-se
                     </a>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,7 +153,7 @@
                 </button>
             </div>
         </nav>
-        
+
         <!-- Mobile Menu -->
         <div class="mobile-menu md:hidden bg-white border-t">
             <div class="px-4 py-2 space-y-2">
@@ -171,9 +171,7 @@
         <div class="relative z-10 flex items-center justify-center md:justify-start h-full px-4 md:px-16">
             <div class="text-white max-w-lg text-center md:text-left">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade-up">
-                    Aula<br>
-                    inaugural<br>
-                    Boakostura
+                    Aula<br> inaugural<br> Boakostura
                 </h1>
                 <a href="https://forms.gle/gNUe7Fj8GTfZecN8A" target="_blank" class="bg-white text-black px-6 py-3 md:px-8 rounded-full font-semibold hover:bg-gray-100 hover-scale transition-all inline-block text-sm md:text-base animate-fade-up animate-delay-200">
                     Inscreva-se!
@@ -187,21 +185,19 @@
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div class="text-center md:text-left order-2 md:order-1 scroll-reveal">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
-                    Sobre a aula<br>
-                    inaugural Gratuita!
+                    Sobre a aula<br>inaugural Gratuita!
                 </h2>
                 <p class="text-base md:text-lg mb-6">
-                    Terça da Aula: Elastiqueira 12<br>
-                    agulhas - Dia 20/09 às 19h
+                    Tema da Aula: Elastiqueira 12 agulhas<br>Dia 20/09 às 13h
                 </p>
-                
+
                 <h3 class="text-lg md:text-xl font-bold mb-4">VOCÊ VAI APRENDER:</h3>
                 <ul class="space-y-2 text-sm md:text-base text-left">
-                    <li>• Quer entender por que uma agulha quebra?</li>
+                    <li>• Quer entender por que uma agulha falha e outras não?</li>
                     <li>• Quer saber por que muitas falhas de ponto não são resolvidas nas primeiras regulagens?</li>
-                    <li>• Quer aprender a ir direto na regulagem certa, evitando tentativas e erros?</li>
-                    <li>• Quer identificar defeitos com segurança?</li>
-                    <li>• Quer resolver problemas de todas as suas dúvidas?</li>
+                    <li>• Quer aprender a ir direto na regulagem certa, evitando tentativas desnecessárias?</li>
+                    <li>• Quer identificar defeitos em segundos?</li>
+                    <li>• Quer respostas claras para todas as suas dúvidas?</li>
                 </ul>
             </div>
             <div class="flex justify-center order-1 md:order-2 scroll-reveal">
@@ -218,12 +214,10 @@
             </div>
             <div class="text-center md:text-left order-2 md:order-2 scroll-reveal">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                    CPT - CURSO<br>
-                    PROFISSIONALIZANTE<br>
-                    TEÓGENES
+                    CPT - CURSO<br> PROFISSIONALIZANTE<br> TEÓGENES
                 </h2>
                 <p class="text-sm md:text-base leading-relaxed">
-                    A CPT Cursos é uma instituição especializada e comprometida com todos os temas de treinamento profissional, oferecendo cursos nas mais diversas áreas de costura. Atuamos desde 2020 capacitando e oferecendo ao mercado profissionais de excelência, com metodologia diferenciada e inovadora. Somos parceiros de qualidade das grandes indústrias têxteis do nosso país para prestar serviços individualizados. Com sede no município de Cascavel/CE, atendemos em grande parte do Rio Grande do Norte e do Brasil.
+                    A CPT Cursos é uma instituição especializada e comprometida em fornecer treinamento especializado no campo da manutenção de máquinas de costura. Atuamos desde 2020 capacitando e oferecendo ao mercado profissionais de excelência, com conhecimento técnico aprofundado, prontos para elevar o padrão de qualidade das grandes indústrias têxteis ou mesmo para prestar serviços individualizados. Com sede no município de Caucaia/CE, atuamos em grande parte do Rio Grande do Norte e do Brasil.
                 </p>
             </div>
         </div>
@@ -237,15 +231,9 @@
             </div>
             <div class="text-center order-2 md:order-2 scroll-reveal">
                 <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-green-600 mb-6 leading-tight">
-                    A participação na aula<br>
-                    é gratuita, mas as vagas<br>
-                    são limitadas e<br>
-                    exclusivas para<br>
-                    inscritos. Não perca<br>
-                    tempo, assegure sua<br>
-                    presença neste<br>
-                    momento histórico da<br>
-                    Boakostura.
+                    A participação na aula<br> é gratuita, mas as vagas<br> são limitadas e<br> exclusivas para<br>
+                    inscritos. Não perca<br> tempo, assegure sua<br> presença neste<br>
+                    momento histórico da<br> Boakostura.
                 </h3>
                 <a href="https://forms.gle/gNUe7Fj8GTfZecN8A" target="_blank" class="bg-green-500 text-white px-6 py-3 md:px-8 rounded-full font-bold hover:bg-green-600 hover-scale transition-all text-base md:text-lg inline-block">
                     CLIQUE AQUI
@@ -257,7 +245,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 md:py-8 px-4 md:px-16">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-xs md:text-sm">&copy; 2024 Boakostura. Todos os direitos reservados.</p>
+            <p class="text-xs md:text-sm">&copy; 2025 Boakostura. Todos os direitos reservados.</p>
         </div>
     </footer>
 
@@ -282,7 +270,7 @@
         window.addEventListener('scroll', function() {
             const parallaxElements = document.querySelectorAll('.parallax');
             const scrolled = window.pageYOffset;
-            
+
             parallaxElements.forEach(element => {
                 const rate = scrolled * -0.5;
                 element.style.transform = `translateY(${rate}px)`;
@@ -292,12 +280,12 @@
         // Scroll reveal animation
         function revealOnScroll() {
             const reveals = document.querySelectorAll('.scroll-reveal');
-            
+
             reveals.forEach(element => {
                 const windowHeight = window.innerHeight;
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 150;
-                
+
                 if (elementTop < windowHeight - elementVisible) {
                     element.classList.add('revealed');
                 }
